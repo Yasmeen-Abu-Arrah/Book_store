@@ -15,7 +15,7 @@
                 <img src="image/logo.png" alt="logo image">
             </div>
             <ul class="var_list">
-                <li><a href="#">Home</a></li>
+                <li><a href="#Home">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Featured</a></li>
                 <li><a href="#">Arrivals</a></li>
@@ -25,19 +25,20 @@
 
             <!-- side bar -- > not complete -->
             <ul class="side_bar">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Featured</a></li>
-                <li><a href="#">Arrivals</a></li>
-                <li><a href="#">Reviews</a></li>
-                <li><a href="#">Blog</a></li>
+                <i class="fa-solid fa-xmark close_btn" onclick="menu()"></i>
+                <li><a href="#" onclick="menu()">Home</a></li>
+                <li><a href="#" onclick="menu()">About</a></li>
+                <li><a href="#" onclick="menu()">Featured</a></li>
+                <li><a href="#" onclick="menu()">Arrivals</a></li>
+                <li><a href="#" onclick="menu()">Reviews</a></li>
+                <li><a href="#" onclick="menu()">Blog</a></li>
             </ul>
             <div class="nav_icons">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-bars" onclick="menu()"></i>
             </div>
 
-            <i class="fa-solid fa-bars"></i>
         </nav>
         <div class="Home">
             <div class="home_tag">
@@ -55,9 +56,14 @@
             </div>
         </div>
     </section>
-    <header>
 
-    </header>
+     <!-- javascript -->
+    <script>
+        function menu() {
+            const sidebar = document.querySelector('.side_bar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
     
 </body>
 </html>
