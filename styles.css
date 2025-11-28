@@ -5,31 +5,37 @@
     /* box-sizing: border-box; */
 }
 
-body {
+section {
     width: 100%;
     height: 100vh;
     background: url(/image/bg.png);
     background-size: cover;
     background-position: center;
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat; 
 
     nav {
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content:space-around;
         box-shadow: 0 0 8px #089da1;
         background: white;
         position: fixed;
-        /* left:0; z-indecx:100; */
+        /* left:0;  */
+        z-index: 100;
 
-        .logo img {
-            width:20%;
-            cursor: pointer;
-            margin: 4% 0;
-        }
-        .logo img:hover {
-            transform: scale(1.05);
+        .logo {
+            width: 20%;
+            min-width: 120px;
+            max-width: 200px;
+            img {
+                width:40%;
+                cursor: pointer;
+                margin: 2% 5%;
+            }
+            img:hover {
+                transform: scale(1.05);
+            }
         }
 
         li {
@@ -41,22 +47,50 @@ body {
                 color: black;
                 text-decoration: none;
                 list-style: none;
+                align-items: center;
             }
             a:hover {
                 color: #027d81;
             }
         }
 
-        .nav_icons i {
-            margin: 0 5px;
-            font-size: 18px;
-            cursor: pointer;
-        }
-        .nav_icons i:hover {
-            color: #089da1;
-            transform: scale(1.1);  
+        /* Side Bar --> not complete */
+        .side_bar {
+            position: fixed;
+            display: none;
+            height:100%;
+            width:100%;
+            top:0;
+            z-index: 999;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.495);
+            backdrop-filter: blur(20px);
+
+            li {
+                padding: 10px;
+            }
+
         }
 
+        .nav_icons {
+            i {
+                margin: 0 5px;
+                font-size: 18px;
+                cursor: pointer;
+            }
+            i:hover {
+                color: #089da1;
+                transform: scale(1.1);
+            }
+
+        }
+
+        .fa-bars {
+            display: none;
+        }
 
     }
+
 }
