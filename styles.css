@@ -192,7 +192,7 @@ section {
             margin-top: 30px;
             box-shadow: 0 0 8px #089da1;
             transition: 0.3;
-            max-width: 250px;
+            max-width: 300px;
 
             i {
                 font-size: 40px;
@@ -212,6 +212,60 @@ section {
         }
     }
 }
+
+.About {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 0 2% 5% 5%;
+        gap:50px;
+
+        .about_tag {
+            flex: 1;
+            min-width: 300px;
+            h1 {
+                font-size: 40px;
+                margin-top: 20px;
+                margin-bottom: 30px;
+                line-height: 1.2;
+                span {
+                    color: #089da1;
+                    font-size: 51px;
+                }
+            }
+            p {
+                width: 90%;
+                text-align: justify;
+                line-height: 1.6;
+                margin-bottom: 55px;
+            }
+            .learn_btn {
+                background: #089da1;
+                padding: 10px 30px;
+                color: white;
+                transition: 0.3s;
+            }
+            .learn_btn:hover {
+                background: #067579;
+            }
+
+        }
+        
+        .about_img {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            min-width: 300px;
+
+            img {
+                width: 100%;
+                max-width: 600px;
+            }
+        }
+
+    }
 
 
 @media (max-width: 991px) {
@@ -234,21 +288,45 @@ section {
         flex-direction: column;
         text-align: center;
         padding-top: 100px;
-    }
-    .home_tag {
-        margin-top: 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
 
-        p {
-            width: 100%;
-            text-align: center;
+        .home_tag {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            p {
+                width: 100%;
+                text-align: center;
+            }
+        }
+        .home_img {
+            width: 80%;
+            padding-top: 10%;
         }
     }
-    .home_img {
-        width: 80%;
-        padding-top: 10%;
-    }
 
+
+    .About {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 50px;
+    
+        .about_tag {
+            margin-top: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            p {
+                width: 100%;
+                text-align: center;
+                line-height: 1.5;
+            }
+        }
+        .about_img {
+            width: 80%;
+            padding-top: 5%;
+        }
+    }
 }
