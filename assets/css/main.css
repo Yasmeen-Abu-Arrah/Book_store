@@ -462,3 +462,75 @@ gap: 30px;
     }
 }
 /*end hero-digital book section*/
+
+/*start our blog section*/
+.our-blog{
+    padding: 50px 0;
+    text-align: center;
+}
+.our-blog{
+    .container{
+        display: flex;
+        justify-content: start;
+        gap: 30px;
+        margin-top: 30px;
+    }
+}
+.our-blog h2{
+    font-size: xx-large;
+    font-weight: bold;
+}
+.our-blog{
+    .blog-card{
+        width: calc((100% - 60px) / 3);
+       box-shadow: 0 0 20px #cecece;
+       padding-bottom: 20px;
+       transition: 0.5s;
+       
+    }
+}
+.our-blog{
+    .blog-card:hover{
+       box-shadow: 0 0 15px  var(--primary);
+       lighting-color: #089da1;
+    }
+}
+.our-blog{
+    .blog-card img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+}
+.our-blog {
+    h3{
+        margin: 12px 0 5px;
+        font-size: large;
+        color: #089da1;
+        font-weight: bolder;
+    }
+}
+.our-blog{
+    p{
+  padding: 0 15px;
+  color: #5c5b5b;
+  font-size: 14px;
+  line-height: 1.4;
+  
+    }
+}
+
+.blog-card .blog-icon{
+        
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0 15px;
+        
+}
+
+.blog-card .blog-icon span svg {
+    width:20px;
+}
+/*end our blog section*/
