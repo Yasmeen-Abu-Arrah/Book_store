@@ -161,5 +161,17 @@ a{
         margin-bottom: 10px;
     }
 }
+/*start media query*/
 
+@media screen and (max-width:1470px){
+ 
+    .new-arrivals .book-product{
+        justify-content: center;
+    }
+    .new-arrivals .book-card{
+        gap: 40px;
+    }
+
+}
+/*end media query*/
 /*end new arrivals*/
