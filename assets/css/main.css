@@ -293,3 +293,55 @@ gap: 30px;
     
 }
 /*end Reviews*/
+
+/*start hero-digital book section*/
+/*
+.hero{
+    background:url('../img/digital book/banner.webp');
+    background-repeat: no-repeat;
+    margin: 50px 0;
+    display: flex;
+   position: relative;
+}*/
+.hero{
+    .btn{
+    width: 8%;
+    padding: 7px 5px;
+    border: 2px solid var(--primary);
+    background: var(--primary);
+    border-radius: 2px;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    top: 280px;
+    left: 110px;
+    transition: 0.5s;
+    text-align: center;
+    font-weight: normal;
+    }
+}
+.hero .btn:hover{
+    background-color: var(--secondary);
+    color: white;
+}
+.hero {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero .hero-content {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    height: auto;
+    
+}
+
+
+/*end hero-digital book section*/
