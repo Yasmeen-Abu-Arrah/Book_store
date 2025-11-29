@@ -342,6 +342,123 @@ gap: 30px;
     height: auto;
     
 }
-
-
+/*media query*/
+@media screen and (max-width: 2290px){
+    .hero{
+      .btn{
+       top:350px;
+       left: 130px;
+    }
+    }
+   
+    
+}
+@media screen and (max-width: 1760px){
+    .hero{
+      .btn{
+       top:300px;
+       left: 120px;
+    }
+    }
+   
+    
+}
+@media screen and (max-width: 1600px){
+    .hero{
+      .btn{
+       top:270px;
+       left: 110px;
+    }
+    }
+   
+    
+}
+@media screen and (max-width: 1340px){
+    .hero{
+      .btn{
+       top:250px;
+       left: 100px;
+       width: fit-content;
+    }
+    }
+   
+    
+}
+@media screen and (max-width: 1220px){
+    .hero{
+      .btn{
+       top:200px;
+       left: 90px;
+       width: fit-content;
+    }
+    }
+   
+    
+}
+@media screen and (max-width: 1000px){
+    .hero{
+      .btn{
+       top:160px;
+       left: 70px;
+       
+    }
+    }
+   
+    
+}
+@media screen and (max-width: 790px){
+    .hero{
+      .btn{
+       top: 130px;
+    font-size: small;
+    padding: 2px;
+    left: 50px;
+    }
+    }
+   
+    
+}
+@media screen and (max-width: 635px){
+    .hero{
+      .btn{
+       top: 105px;
+    font-size: small;
+    padding: 2px;
+    left: 45px;
+    }
+    }
+}
+@media screen and (max-width: 530px){
+    .hero{
+      .btn{
+       top: 91px;
+    font-size: xx-small;
+    font-weight: 200;
+    padding: 2px;
+    left: 35px;
+    }
+    }
+}
+@media screen and (max-width: 460px){
+    .hero{
+      .btn{
+       top: 75px;
+    font-size: xx-small;
+    font-weight: 100;
+    padding: 2px;
+    left: 30px;
+    }
+    }
+}
+@media screen and (max-width: 370px){
+    .hero{
+      .btn{
+       top: 60px;
+    font-size: xx-small;
+    font-weight: 100;
+    padding: 2px;
+    left: 25px;
+    }
+    }
+}
 /*end hero-digital book section*/
