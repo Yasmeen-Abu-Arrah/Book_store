@@ -175,3 +175,82 @@ a{
 }
 /*end media query*/
 /*end new arrivals*/
+
+/*start Reviews*/
+.reviews{
+    text-align: center;
+    padding: 50px 0;
+}
+.reviews h2{
+    font-size: xx-large;
+    font-weight: bold;
+    margin-bottom: 30px;
+   /* position: relative;
+    display: inline-block;*/
+}
+/*
+.reviews h2::after{
+    content: '،،';
+    position: absolute;
+    color: gray;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: var(--primary);
+}*/
+.reviews-list{
+display: flex;
+flex-wrap: wrap;
+padding-top: 20px;
+justify-content:center;
+gap: 30px;
+}
+.reviews{
+    .book-card{
+        width: calc((100% - 90px) / 4);
+        min-width: 300px;
+        padding: 30px 25px;
+        text-align: start;
+        height:auto;
+    }
+}
+.reviews{
+    .review-img{
+       display: flex;
+         justify-content: space-between;
+         
+    }
+}
+.reviews{
+    .book-card img{
+        width: 35%;
+        height: 25%;
+        border-radius: 50%;
+        object-fit: cover;
+      
+    }
+}
+.reviews{
+    .book-card h3{
+        margin-bottom: 7px;
+        font-weight: bolder;
+    }
+}
+.reviews{
+    .book-card p{
+        color: #494949;
+        line-height: 1.6;
+        margin-bottom: 10px;
+    }
+}
+.reviews{
+    .book-card svg{
+         width: 10%;
+        margin-bottom: 10px;
+    }
+}
+
+
+/*end Reviews*/
