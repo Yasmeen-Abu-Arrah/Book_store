@@ -219,7 +219,7 @@ section {
         justify-content: space-between;
         width: 100%;
         flex-wrap: wrap;
-        padding: 0 2% 5% 5%;
+        padding: 5% 2% 5% 5%;
         gap:50px;
 
         .about_tag {
@@ -277,14 +277,12 @@ footer {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin: auto;
-        padding: 25px 20px;
+        padding: 40px 5%;
 
         .tag {
-            flex: 1 1 230px;
+            flex: 1 1;
             margin-bottom: 30px;
-            margin-right: 20px;
-            margin-left: 30px;
+            margin-right: 50px;
 
             img {
                 width: 35%;
@@ -296,8 +294,6 @@ footer {
                 font-size: 14px;
                 text-align: justify;
                 margin-bottom: 20px;
-                max-width: 50%;
-
             }
             h1 {
                 font-size: 20px;
@@ -371,12 +367,12 @@ footer {
         align-items: center;
         justify-content: center;
         padding: 15px;
+        font-size: 15PX;
         color: black;
 
         span {
             color:#089da1;
-            
-        }
+            }
     }
 
 }
