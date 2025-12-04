@@ -9,7 +9,7 @@
 
 section {
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     background: url(/image/bg.png);
     background-size: cover;
     background-position: center;
@@ -181,15 +181,15 @@ section {
     .serv_box {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-around ;
         gap: 50px;
         width: 100%;
-        
+
         .serv_cards {
-            flex: 2 0 100px;
+            flex: 1 2 120px;
             padding: 15px 10px;
             justify-items: center;
-            margin: auto;
-            margin-top: 30px;
+            margin: 0;
             box-shadow: 0 0 8px #089da1;
             transition: 0.3;
             max-width: 300px;
@@ -216,10 +216,10 @@ section {
 .About {
         display: flex;
         align-items: center;
+        justify-items: center;
         justify-content: space-between;
-        width: 100%;
         flex-wrap: wrap;
-        padding: 5% 2% 5% 5%;
+        padding: 10% 2% 5% 5%;
         gap:50px;
 
         .about_tag {
@@ -273,31 +273,30 @@ footer {
     background: #eaeaea;
 
     .footer {
-        max-width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding: 40px 5%;
+        padding: 2%;
 
         .tag {
             flex: 1 1;
-            margin-bottom: 30px;
-            margin-right: 50px;
+            margin-right: 2%;
+            margin-left: 2%;
 
             img {
-                width: 35%;
-                max-width: 100px;
-                margin-bottom: 15px;
+                width: 40%;
+                margin-bottom: 4%;
             }
             p {
-                line-height: 1.6;
+                line-height: 1.5;
                 font-size: 14px;
                 text-align: justify;
                 margin-bottom: 20px;
+                min-width: 130px;
             }
             h1 {
                 font-size: 20px;
-                margin-bottom: 10px;
+                margin-bottom: 5%;
             }
             a {
                 color: black;
@@ -313,7 +312,7 @@ footer {
             }
             .social_links {
                 display: flex;
-                gap: 15px;
+                gap: 10%;
 
                 a {
                     display: inline-flex;
@@ -366,34 +365,43 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 15px;
+        padding: 2% 0 2%;
         font-size: 15PX;
         color: black;
 
         span {
             color:#089da1;
-            }
+        }
     }
 
 }
 
 
-@media (max-width: 991px) {
+/*@media (max-width: 991px) {
     .home_tag {
         h1 {
             font-size: 40px;
         }
     }
-}
+}*/
+
 @media (max-width: 768px) {
-    nav {
+    section {
+        height: fit-content;
+        padding-bottom: 10%;
+        align-content: center;
+        nav {
         .var_list {
             display: none;
         }
         .fa-bars {
             display: block;
         }
-    }
+
+    }}
+
+
+
     .Home {
         flex-direction: column;
         text-align: center;
@@ -429,7 +437,7 @@ footer {
             align-items: center;
 
             p {
-                width: 100%;
+                width: 80%;
                 text-align: center;
                 line-height: 1.5;
             }
@@ -440,12 +448,30 @@ footer {
         }
     }
 
-    .footer {
-        padding: 0 10px;
+    footer {
+    .footer {     
+        gap: 10%;
+        padding: 5%;
 
         .tag {
-            width: 100%;
-            margin-bottom: 10px;
+            min-width: 40%;
+            padding-bottom: 6%;
+            p {
+                font-size: 12px;                        
+            }
+            img {
+                width: 60%;
+            }
+            a {
+                font-size: 14px;
+            }
+            .social_links {
+                gap: 5%;
+            }
         }
     }
+    .end {
+        padding: 7% 0 5%;
+        }
+}
 }
