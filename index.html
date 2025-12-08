@@ -26,22 +26,25 @@
             </ul>
 
             <!-- side bar -- > not complete -->
-            <ul class="side_bar">
-                <i class="fa-solid fa-xmark close_btn" onclick="menu()"></i>
-                <li><a href="#Home" onclick="menu()">Home</a></li>
-                <li><a href="#About" onclick="menu()">About</a></li>
-                <li><a href="#Featured" onclick="menu()">Featured</a></li>
-                <li><a href="#Arrivals" onclick="menu()">Arrivals</a></li>
-                <li><a href="#Reviews" onclick="menu()">Reviews</a></li>
-                <li><a href="#Blog" onclick="menu()">Blog</a></li>
+            <ul class="side_bar" id="side_bar">
+                <i class="fa-solid fa-xmark close_btn" id="close_menu"></i>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Featured">Featured</a></li>
+                <li><a href="#Arrivals">Arrivals</a></li>
+                <li><a href="#Reviews">Reviews</a></li>
+                <li><a href="#Blog">Blog</a></li>
             </ul>
             <div class="nav_icons">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <i class="fa-solid fa-heart"></i>
-                <i class="fa-solid fa-bars" onclick="menu()"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-bars" id="menu_icon"></i>
             </div>
 
         </nav>
+
         <div class="Home" id="Home">
             <div class="home_tag">
                 <h1>WELCOME TO <br><span>BOOK STORE</span></h1>
@@ -102,16 +105,6 @@
             <a href="#" class="learn_btn"> Learn More</a>
         </div>
     </div>
-
-     <!-- javascript -->
-    <script>
-        function menu() {
-            const sidebar = document.querySelector('.side_bar');
-            sidebar.classList.toggle('active');
-        }
-    </script>
-
-     
 
     <section class="featured-books" id="Featured">
       <div class="container">
@@ -669,6 +662,25 @@
         </div>
         <p class="end">Design By &nbsp; <span><i class="fa-solid fa-face-grin"></i> &nbsp;WT Master Code</span></p>
     </footer>
+
+
+    <!-- javascript -->
+    <script>
+      let sideBar = document.querySelector('#side_bar');
+      let menuToggle = document.querySelector('#menu_icon');
+      let closeBtn = document.querySelector('#close_menu');
+      menuToggle.onclick = () => {
+        sideBar.classList.add('active');
+      };
+      closeBtn.onclick = () => {
+        sideBar.classList.remove('active');
+      };
+      document.querySelectorAll('#side_bar a').forEach(link => {
+        link.onclick = () => {
+          sideBar.classList.remove('active');
+        };
+      });
+    </script>
 
 </body>
 </html>
