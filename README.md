@@ -1,4 +1,5 @@
 <h1 align="center">📚 Book Store</h1>
+<br>
 
 <p align="center">
   <a href="#"><img src="https://img.shields.io/badge/HTML-70%25-orange?style=for-the-badge&logo=html5&logoColor=white"></a>
@@ -57,7 +58,8 @@ The repository is organized logically to maintain clarity and facilitate future 
 │   ├── 📁 css/
 │   │   └── 🎨 main.css       # CSS file for Featured, Arrivals, Reviews and Blog sections.
 ├── 📁 img/ 🖼️                # For book covers, reviews and blogers.
-└── 📁 image/ 🖼️              # For icon, background and about image.
+├── 📁 image/ 🖼️              # For icon, background and about image.
+└── README.md
 ```
 ---
 
