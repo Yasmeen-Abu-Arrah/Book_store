@@ -13,7 +13,7 @@
     --btn-text: white;
     --search--bg :#cacaca;
     --background-filter: none;
-    --about-bg: url(/image/bg.png);
+    --about-bg: url(./image/bg.png);
 
 }
 
@@ -28,7 +28,7 @@ body.dark-mode {
     --search--bg: #dce2e1;
     --btn-hover: #2e7b82;
     --btn-text: #141414;
-    --about-bg: url(/image/about_bg_dark.png);
+    --about-bg: url(./image/about_bg_dark.png);
     --side-bar-bg: rgba(23, 21, 21, 0.804);
 }
 
