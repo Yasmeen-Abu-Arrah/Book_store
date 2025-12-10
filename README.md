@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=3000&color=2196F3&width=900&lines=BookVerse%3A+A+Responsive+E-commerce+Web+Project+📚;Crafted+with+Modern+HTML%2FCSS+for+a+Seamless+UX+✨;Built+by+Computer+Systems+Engineering+Students+🤝">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=3000&color=2196F3&width=900&lines=BookStore%3A+A+Responsive+E-commerce+Web+Project+📚;Crafted+with+Modern+HTML%2FCSS+for+a+Seamless+UX+✨;Built+by+Computer+Systems+Engineering+Students+🤝">
   </a>
 </p>
 
