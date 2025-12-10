@@ -9,10 +9,31 @@
 :root{
     --primary:#089da1;
     --secondary:#85cfd1;
+    --slide-bg-color: rgb(220, 217, 217);
+    --book-card-border-color:#adadad;
+    --book-card-bg:white;
+    --butoon-bg-color:white;
+    --button-txt-color:black;
+    --txt-color: #494949;
+
+    
+    --background-filter: none;
   
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-style: normal;
+}
+
+body.dark-mode {
+    --primary:#089da1;
+    --secondary:#85cfd1;
+    --slide-bg-color: black;
+    --book-card-border-color:black;
+    --book-card-bg:black;
+    --butoon-bg-color:#089da1;
+    --button-txt-color:black;
+    --txt-color: white;
+
 }
 a{
     text-decoration: none;
@@ -48,7 +69,7 @@ a{
 
 .slider::-webkit-scrollbar {
     height: 6px;
-    background-color: rgb(220, 217, 217);
+    background-color: var(--slide-bg-color);
 }
 
 .slider::-webkit-scrollbar-thumb {
@@ -58,11 +79,11 @@ a{
 .book-card {
     min-width: 250px;
     max-width: 250px;    /*very important to stay sliding*/
-    border: 1px solid #adadad;
+    border: 1px solid  var(--book-card-border-color);
     padding: 25px;
     border-radius: 2px;
     scroll-snap-align: center; /*عشان اوقف كل مرة عند center */
-    background: #fff;
+    background: var(--book-card-bg);
 }
 .book-card img {
     width: 100%;
@@ -108,7 +129,8 @@ a{
     width: 50%;
     padding: 7px 5px;
     border: 1px solid var(--primary);
-    background: white;
+    background: var(--butoon-bg-color);
+    color: var(--button-txt-color);
     border-radius: 2px;
     cursor: pointer;
     
@@ -231,7 +253,7 @@ gap: 30px;
 }
 .reviews{
     .book-card p{
-        color: #494949;
+        color: var(--txt-color);
         line-height: 1.6;
         margin-bottom: 10px;
     }
@@ -324,10 +346,7 @@ gap: 30px;
     background-color: var(--secondary);
     color: white;
 }
-.hero {
-    padding: 80px 0;
-    text-align: center;
-}
+
 
 .hero .hero-content {
     position: relative;
@@ -339,7 +358,7 @@ gap: 30px;
     width: 100%;
     max-width: 100%;
     min-width: 100%;
-    height: auto;
+    
     
 }
 /*media query*/
@@ -516,7 +535,7 @@ gap: 30px;
 .our-blog{
     p{
   padding: 0 15px;
-  color: #5c5b5b;
+  color: var(--txt-color);
   font-size: 14px;
   line-height: 1.4;
   flex: 1; /*عشان يكونن على نفس المستوى*/
